@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+
+<html lang="FR">
+	<head>
+		<title>My TodoList</title>
+		<meta charset="utf-8" />
+		<meta name='viewport' content='width=device-width . initial-scale=1.0 . maximum-scale=1.0' />
+		<!-- Style Css -->
+	</head>
+        <body>
+            
+            <div>
+                <h1>My Todolist</h1>
+                <ul>
+                    <%= todolist.forEach(function(todo, index){ %>
+                        <li><a href="/supprimer/<%= index %>">✘</a> <%= todo %></li>
+                    <% }); %>
+                </ul>
+
+                <form action="/ajouter/" method="POST">
+                    <p>
+                        <label for="newtodo">To do :</label>
+                        <input type="text" name="newtodo" id="newtodo" autofocus />
+                        <input type="submit"/>
+                    </p>
+                </form>
+            </div>
+
+
+
+
+
+        <!-- Scripts -->
+        
+	</body>
+</html>
