@@ -1,8 +1,9 @@
 
-/* Call and Use Express, Cookie Session and Parameters */
+/* Call and Use : Express, Cookie Session, Parameters */
 
 var express = require('express');
 var session = require('cookie-session');
+
 var bodyParser = require('body-parser'); 
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
@@ -12,6 +13,8 @@ var app = express(); // initialisation of express
 /* Use Session */
 app.use(session({secret: 'todotopsecret'}))
 
+/* use directory public for other file like css or js */
+.use(express.static(__dirname + '/public'))
 
 /* If no todolist in actualy session, create one */
 .use(function(req, res, next){
