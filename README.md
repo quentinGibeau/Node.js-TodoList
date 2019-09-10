@@ -7,6 +7,7 @@
 <hr>
 <ul><li><p>Node js</p></li>
     <li><p>Express</p></li>
+    <li><p>Session cookie</p></li>
     <li><p>JavaScript</p></li>
 </ul>
 
