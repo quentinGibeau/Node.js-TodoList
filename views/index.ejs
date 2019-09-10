@@ -2,25 +2,28 @@
 
 <html lang="FR">
     <head>
-        <title>My todolist</title>
+        <title>Ma Todolist</title>
         <meta charset="utf-8" />
         <meta name='viewport' content='width=device-width . initial-scale=1.0 . maximum-scale=1.0' />
 
         <!-- Style CSS -->
         <link rel="stylesheet" href="/css/style.css" />
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Work+Sans:700&display=swap" rel="stylesheet"> 
     </head>
         <body>
 
                 <!-- || BEGIN || Todo List Div-->
 
             <div id="container">
-                <h1 id="title">My Day</h1>
+                <h1 id="title">Ma Journée</h1>
+                <span id="date"></span>
+            
                     <div class="content">
                         <form action="/ajouter/" method="post">
                             <p>
-                                <label for="newtodo">To do</label><br><br>
                                 <input type="text" name="newtodo" id="newtodo" autofocus />
-                                <input type="submit" />
+                                <input type="submit" value="Ajouter" class="input" />
                             </p>
                         </form>
                         
