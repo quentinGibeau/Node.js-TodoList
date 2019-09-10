@@ -9,6 +9,7 @@
     <li><p>Express</p></li>
     <li><p>Session cookie</p></li>
     <li><p>JavaScript</p></li>
+    <li><p>Responsive</p></li>
 </ul>
 
 <h3><strong>Use</strong></h3>
